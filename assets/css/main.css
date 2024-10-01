@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Otterco Regular */
+@font-face {
+  font-family: "Otterco";
+  src: url('/fonts/Otterco-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Otterco Light */
+@font-face {
+  font-family: "Otterco";
+  src: url('/fonts/Otterco-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Otterco Medium */
+@font-face {
+  font-family: "Otterco";
+  src: url('/fonts/Otterco-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Otterco SemiBold */
+@font-face {
+  font-family: "Otterco";
+  src: url('/fonts/Otterco-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Otterco ExtraBold */
+@font-face {
+  font-family: "Otterco";
+  src: url('/fonts/Otterco-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Otterco Thin */
+@font-face {
+  font-family: "Otterco";
+  src: url('/fonts/Otterco-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Otterco Display variants */
+@font-face {
+  font-family: "OttercoDisplay";
+  src: url('/fonts/OttercoDisplay-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OttercoDisplay";
+  src: url('/fonts/OttercoDisplay-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OttercoDisplay";
+  src: url('/fonts/OttercoDisplay-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OttercoDisplay";
+  src: url('/fonts/OttercoDisplay-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OttercoDisplay";
+  src: url('/fonts/OttercoDisplay-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OttercoDisplay";
+  src: url('/fonts/OttercoDisplay-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OttercoDisplay";
+  src: url('/fonts/OttercoDisplay-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+*, *::before,*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+}
+
+body{
+  background-color: #ffffff;
+  font-size: 16px;
+  font-family: 'Otterco', sans-serif;
+  color: rgb(36, 36, 36);
+  /* background-image: url("~/assets/textured-paper.png"); */
+}
+
+h1 {
+  font-family: 'Otterco', sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  color: rgb(36, 36, 36);
+}
+
+.btn{
+  background: rgb(36, 36, 36);
+  border-radius: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px 48px;
+  color: #ffffff;
+}
+
+.otterco-text {
+  font-family: 'Otterco', sans-serif;
+}

@@ -153,6 +153,12 @@ h1 {
   color: #ffffff;
 }
 
+.btn.light{
+  background: #fff;
+  color: rgb(36, 36, 36);
+  padding: 12px 16px;
+}
+
 .otterco-text {
   font-family: 'Otterco', sans-serif;
 }

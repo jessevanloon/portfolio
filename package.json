@@ -12,9 +12,11 @@
   "dependencies": {
     "@nuxt/icon": "^1.5.2",
     "gsap": "^3.12.5",
+    "lottie-web": "^5.12.2",
     "nuxt": "^3.13.0",
     "vue": "latest",
     "vue-router": "latest",
+    "vue3-lottie": "^3.3.1",
     "vue3-marquee-slider": "^1.0.5"
   },
   "devDependencies": {

@@ -8,8 +8,12 @@ export default defineNuxtConfig({
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
+      
     },
   },
 
   modules: ['@nuxt/icon'],
+  plugins: ['~/plugins/lottie.client'],
+
+
 })

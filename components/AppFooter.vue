@@ -1,5 +1,29 @@
+<script setup>
+import { ref, onMounted } from 'vue'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
+
+const footerWrap = ref(null)
+
+onMounted(() => {
+  gsap.from(footerWrap.value, {
+    opacity: 0,
+    y: 100,
+    duration: 1.2,
+    scrollTrigger: {
+      trigger: footerWrap.value,
+      start: 'top 80%',
+      end: 'bottom 20%',
+      toggleActions: 'play none none reverse'
+    }
+  })
+})
+</script>
+
 <template>
-  <div class="footer">
+  <div class="footer" ref="footerWrap">
     <div class="container mx-auto">
       <div class="footer-inner">
         <div class="icon-wrap">

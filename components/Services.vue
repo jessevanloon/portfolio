@@ -1,5 +1,30 @@
+<script setup>
+import { ref, onMounted } from 'vue'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
+
+const servicesWrap = ref(null)
+
+onMounted(() => {
+  gsap.from(servicesWrap.value, {
+    opacity: 0,
+    y: 100,
+    duration: 1.2,
+    scrollTrigger: {
+      trigger: servicesWrap.value,
+      start: 'top 80%',
+      end: 'bottom 20%',
+      toggleActions: 'play none none reverse'
+    }
+  })
+})
+</script>
+
+
 <template>
-  <div class="services-wrap">
+  <div class="services-wrap" ref="servicesWrap">
     <div class="container mx-auto">
       <div class="services-content flex flex-col items-center justify-center gap-16">
         <div class="title-wrap">

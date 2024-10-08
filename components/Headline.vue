@@ -6,7 +6,7 @@ export default {
   mounted() {
     this.animateProfileImage();
     this.animateImageLabel();
-    this.setupButtonAnimation();
+    // this.setupButtonAnimation();
     // this.animateBackground();
 
   },
@@ -26,29 +26,6 @@ export default {
         ease: "power1.inOut",
         yoyo: true,
         repeat: -1
-      });
-    },
-    setupButtonAnimation() {
-      const button = document.querySelector('.btn');
-      
-      button.addEventListener('mouseenter', () => {
-        gsap.to(button, {
-          scale: 1.01,
-          backgroundColor: '#ff6b6b',
-          boxShadow: '0 4px 20px rgba(255, 107, 107, 0.4)',
-          duration: 0.3,
-          ease: 'power2.out'
-        });
-      });
-
-      button.addEventListener('mouseleave', () => {
-        gsap.to(button, {
-          scale: 1,
-          backgroundColor: '#FF6500',
-          boxShadow: '0 2px 10px rgba(0, 123, 255, 0.2)',
-          duration: 0.3,
-          ease: 'power2.out'
-        });
       });
     },
     // animateBackground() {
@@ -105,6 +82,7 @@ export default {
           <h1 class="title title-font text-center">Building digital products, brands, and experience.</h1>
           <div class="btn-wrap flex items-center justify-center mt-6">
             <a class="btn">Work together</a>
+            <!-- <LottieAnimation src="animations/lightning.json" /> -->
           </div>
         </div>
       </div>
@@ -180,15 +158,17 @@ export default {
   width: 140px;
 }
 
+.headline-wrap .btn{
+  background: rgb(255, 101, 0);
+}
+
+
 @media(max-width: 767px){
   .full-headline-wrap{
     border-radius: 0 0 80px 80px;
   }
   .inner{
     padding: 16px 12px;
-  }
-  .headline-wrap .btn{
-    background: rgb(255, 101, 0);
   }
   .inner .email{
     font-size: 18px;

@@ -8,19 +8,31 @@ gsap.registerPlugin(ScrollTrigger)
 const footerWrap = ref(null)
 
 onMounted(() => {
+  // Initialiseer ScrollTrigger en detecteer de scrollrichting
+  let lastScrollTop = 0
+
   gsap.from(footerWrap.value, {
     opacity: 0,
     y: 100,
-    duration: 1.2,
+    duration: 1,
     scrollTrigger: {
       trigger: footerWrap.value,
       start: 'top 80%',
       end: 'bottom 20%',
-      toggleActions: 'play none none reverse'
+      toggleActions: 'play none none reverse',
+      onUpdate: (self) => {
+        let currentScrollTop = self.scroller.scrollTop || window.pageYOffset
+        if (currentScrollTop > lastScrollTop) {
+          // Speel de animatie alleen als er naar beneden wordt gescrold
+          gsap.to(footerWrap.value, { opacity: 1, y: 0, duration: 1 })
+        }
+        lastScrollTop = currentScrollTop
+      }
     }
   })
 })
 </script>
+
 
 <template>
   <div class="footer" ref="footerWrap">

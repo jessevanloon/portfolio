@@ -81,7 +81,7 @@ export default {
           </div>
           <h1 class="title title-font text-center">Building digital products, brands, and experience.</h1>
           <div class="btn-wrap flex items-center justify-center mt-6">
-            <a class="btn">Work together</a>
+            <a href="mailto:jesseruben.vanloon@gmail.com" target="_blank" class="btn">Work together</a>
             <!-- <LottieAnimation src="animations/lightning.json" /> -->
           </div>
         </div>

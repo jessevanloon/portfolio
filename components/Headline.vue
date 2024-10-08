@@ -179,4 +179,29 @@ export default {
   transform: rotate(-10deg);
   width: 140px;
 }
+
+@media(max-width: 767px){
+  .full-headline-wrap{
+    border-radius: 0 0 80px 80px;
+  }
+  .inner{
+    padding: 16px 12px;
+  }
+  .headline-wrap .btn{
+    background: rgb(255, 101, 0);
+  }
+  .inner .email{
+    font-size: 18px;
+  }
+  .social-icons span{
+    font-size: 22px;
+  }
+  .headline-wrap{
+    padding: 40px 0;
+    padding-bottom: 60px;
+  }
+  .image-wrap{
+    margin-bottom: 20px;
+  }
+}
 </style>

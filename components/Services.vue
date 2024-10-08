@@ -11,31 +11,39 @@
           </div>
           <div class="services-inner flex justify-center items-center mt-8 gap-8">
             <div class="service">
-              <div class="image-wrap">
-                <img src="/svgs/website-design.svg" />
+              <div class="first-block">
+                <div class="image-wrap">
+                  <img src="/svgs/website-design.svg" />
+                </div>
+                <div class="service-title">UX & UI</div>
               </div>
-              <div class="service-title">UX & UI</div>
               <div class="text">Designing interfaces that are intuitive, efficient, and enjoyable to use.</div>
             </div>
             <div class="service">
-              <div class="image-wrap">
-                <img src="/svgs/mobile-design.svg" />
+              <div class="first-block">
+                <div class="image-wrap">
+                  <img src="/svgs/mobile-design.svg" />
+                </div>
+                <div class="service-title">Web & Mobile App</div>
               </div>
-              <div class="service-title">Web & Mobile App</div>
               <div class="text">Transforming ideas into exceptional web and mobile app experiences.</div>
             </div>
             <div class="service">
+              <div class="first-block">
               <div class="image-wrap">
                 <img src="/svgs/creative-design.svg" />
               </div>
               <div class="service-title">Design & Creative</div>
+              </div>
               <div class="text">Crafting visually stunning designs that connect with your audience.</div>
             </div>
             <div class="service">
-              <div class="image-wrap">
-                <img src="/svgs/development.svg" />
+              <div class="first-block">
+                <div class="image-wrap">
+                  <img src="/svgs/development.svg" />
+                </div>
+                <div class="service-title">Development</div>
               </div>
-              <div class="service-title">Development</div>
               <div class="text">Bringing your vision to life with the latest technology and design trends.</div>
             </div>
           </div>
@@ -108,5 +116,54 @@
 
 .services-wrap .service .text{
   max-width: 220px;
+}
+
+.services-wrap .service .first-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  flex: 1;
+}
+
+@media(max-width: 767px){
+  .services-wrap{
+    border-radius: 80px;
+  }
+  .services-content{
+    padding: 0 12px;
+  }
+  .services-wrap .title-wrap .title{
+    font-size: 28px;
+  }
+  .services-wrap .services{
+    width: 100%;
+  }
+  .services-wrap .services-inner{
+    flex-direction: column;
+    width: 100%;
+    padding: 0 12px;
+  }
+  .services-wrap .service{
+    flex: unset;
+    width: 100%;
+    /* flex-direction: row; */
+    align-items: center;
+  }
+  .services-wrap .service .text{
+    max-width: none;
+    text-align: center;
+  }
+  .services-wrap .service .first-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex: 1;
+  }
+  .services-wrap .services .btn-wrap .btn{
+    background: rgb(36, 36, 36) !important;
+  }
 }
 </style>

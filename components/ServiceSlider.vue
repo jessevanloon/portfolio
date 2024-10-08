@@ -56,4 +56,10 @@ export default {
   justify-content: center;
   gap: 12px;
 }
+
+@media(max-width: 767px){
+  .slider-wrapper{
+    padding: 80px 0;
+  }
+}
 </style>

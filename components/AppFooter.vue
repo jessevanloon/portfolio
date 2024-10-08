@@ -90,4 +90,18 @@
   align-items: center;
   gap: 8px;
 }
+@media(max-width: 767px){
+  .footer .footer-inner{
+    padding: 80px 0;
+    gap: 20px;
+  }
+  .footer .footer-inner .btn-wrap{
+    flex-direction: column;
+  }
+  .footer-bottom{
+    flex-direction: column-reverse;
+    gap: 12px;
+    padding: 20px 0;
+  }
+}
 </style>

@@ -7,26 +7,34 @@
         </div>
         <div class="services flex">
           <div class="btn-wrap">
-            <a class="btn light">Services</a>
+            <a class="btn orange">Services</a>
           </div>
           <div class="services-inner flex justify-center items-center mt-8 gap-8">
             <div class="service">
-              <LottieAnimation src="/animations/lightning.json" />
+              <div class="image-wrap">
+                <img src="/svgs/website-design.svg" />
+              </div>
               <div class="service-title">UX & UI</div>
               <div class="text">Designing interfaces that are intuitive, efficient, and enjoyable to use.</div>
             </div>
             <div class="service">
-              <LottieAnimation src="/animations/lightning.json" />
+              <div class="image-wrap">
+                <img src="/svgs/mobile-design.svg" />
+              </div>
               <div class="service-title">Web & Mobile App</div>
               <div class="text">Transforming ideas into exceptional web and mobile app experiences.</div>
             </div>
             <div class="service">
-              <LottieAnimation src="/animations/lightning.json" />
+              <div class="image-wrap">
+                <img src="/svgs/creative-design.svg" />
+              </div>
               <div class="service-title">Design & Creative</div>
               <div class="text">Crafting visually stunning designs that connect with your audience.</div>
             </div>
             <div class="service">
-              <LottieAnimation src="/animations/lightning.json" />
+              <div class="image-wrap">
+                <img src="/svgs/development.svg" />
+              </div>
               <div class="service-title">Development</div>
               <div class="text">Bringing your vision to life with the latest technology and design trends.</div>
             </div>
@@ -40,9 +48,10 @@
 <style scoped>
 .services-wrap{
   padding: 80px 0;
-  border-radius: 140px 140px 0 0;
-  background-image: url('/textured-paper.png');
-  background-position: center center;
+  border-radius: 120px 120px 120px 120px;
+  /* background-image: url('/textured-paper.png');
+  background-position: center center; */
+  background: #eee;
 }
 
 .services-wrap .title-wrap .title{
@@ -60,8 +69,14 @@
   justify-content: center;
 }
 
-.services-wrap .services svg{
-  height: 100px;
+.services-wrap .services .service .image-wrap{
+  display: flex;
+  align-items: center;
+}
+
+.services-wrap .services .service img{
+  height: 60px;
+  width: 60px;
 }
 
 .services-wrap .services .btn-wrap{
@@ -69,7 +84,7 @@
   top: -30px;
 }
 
-.services-wrap .services .btn-wrap .btn.light{
+.services-wrap .services .btn-wrap .btn.orange{
   transform: rotate(-10deg);
   width: 120px;
 }

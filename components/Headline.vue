@@ -7,7 +7,7 @@ export default {
     this.animateProfileImage();
     this.animateImageLabel();
     this.setupButtonAnimation();
-    this.animateBackground();
+    // this.animateBackground();
 
   },
   methods: {
@@ -51,15 +51,15 @@ export default {
         });
       });
     },
-    animateBackground() {
-      gsap.to(".full-headline-wrap", {
-        backgroundPosition: "calc(50% + 30px) calc(50% - 30px)",
-        duration: 20,
-        ease: "sine.inOut",
-        repeat: -1,
-        yoyo: true
-      });
-    }
+    // animateBackground() {
+    //   gsap.to(".full-headline-wrap", {
+    //     backgroundPosition: "calc(50% + 30px) calc(50% - 30px)",
+    //     duration: 10,
+    //     ease: "sine.inOut",
+    //     repeat: -1,
+    //     yoyo: true
+    //   });
+    // }
   }
 }
 </script>
@@ -116,8 +116,9 @@ export default {
 <style scoped>
 .full-headline-wrap{
   border-radius: 0 0 140px 140px;
-  background-image: url('/textured-paper.png');
-  background-position: center center;
+  /* background-image: url('/textured-paper.png');
+  background-position: center center; */
+  background: #eee;
   position: relative;
   overflow: hidden;
 }

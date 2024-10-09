@@ -5,10 +5,6 @@ import '../node_modules/vue3-marquee-slider/dist/style.css'
 export default {
   components: {
     VueMarqueeSlider
-  },
-  setup() {
-    const sliderKey = ref(Date.now());
-    return { sliderKey };
   }
 }
 
@@ -21,14 +17,12 @@ export default {
     :speed="40000"
     :space="20"
     :width="400"
-    :key="sliderKey"
-
   >
-    <div class="item"><span class="dot"></span>Brand design</div>
-    <div class="item"><span class="dot"></span>Website design</div>
-    <div class="item"><span class="dot"></span>Website development</div>
-    <div class="item"><span class="dot"></span>Software development</div>
-    <div class="item"><span class="dot"></span>E-commerce solutions</div>
+    <div :key="1" class="item"><span class="dot"></span>Brand design</div>
+    <div :key="2" class="item"><span class="dot"></span>Website design</div>
+    <div :key="3" class="item"><span class="dot"></span>Website development</div>
+    <div :key="4" class="item"><span class="dot"></span>Software development</div>
+    <div :key="5" class="item"><span class="dot"></span>E-commerce solutions</div>
   </vue-marquee-slider>
   </div>
 </template>

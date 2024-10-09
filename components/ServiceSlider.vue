@@ -14,7 +14,7 @@ export default {
   <div class="slider-wrapper">
     <vue-marquee-slider
     id="marquee-slider-loop"
-    :speed="43000"
+    :speed="40000"
     :space="20"
     :width="400"
 

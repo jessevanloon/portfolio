@@ -6,32 +6,35 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const servicesWrap = ref(null)
+const animationPlayed = ref(false)
 
 onMounted(() => {
-  // Initialiseer ScrollTrigger en detecteer de scrollrichting
-  let lastScrollTop = 0
-
-  gsap.from(servicesWrap.value, {
-    opacity: 0,
-    y: 100,
-    duration: 1,
+  const tl = gsap.timeline({
     scrollTrigger: {
       trigger: servicesWrap.value,
       start: 'top 80%',
       end: 'bottom 20%',
-      toggleActions: 'play none none reverse',
-      onUpdate: (self) => {
-        let currentScrollTop = self.scroller.scrollTop || window.pageYOffset
-        if (currentScrollTop > lastScrollTop) {
-          // Speel de animatie alleen als er naar beneden wordt gescrold
-          gsap.to(servicesWrap.value, { opacity: 1, y: 0, duration: 1 })
+      once: true, // Zorgt ervoor dat de animatie slechts één keer wordt afgespeeld
+      onEnter: () => {
+        if (!animationPlayed.value) {
+          tl.to(servicesWrap.value, {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            onComplete: () => {
+              animationPlayed.value = true
+            }
+          })
         }
-        lastScrollTop = currentScrollTop
       }
     }
   })
+
+  // Stel de initiële staat in
+  gsap.set(servicesWrap.value, { opacity: 0, y: 100 })
 })
 </script>
+
 
 
 <template>

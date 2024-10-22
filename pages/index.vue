@@ -1,7 +1,8 @@
 <template>
   <div>
     <Headline />
-    <ServiceSlider />
+    <!-- <ServiceSlider /> -->
+    <ServiceMarquee />
     <Services />
   </div>
 </template>

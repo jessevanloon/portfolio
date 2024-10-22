@@ -58,8 +58,8 @@ onMounted(() => {
           <a href="https://www.instagram.com/jesse.vanloon">Instagram</a>
           <div>/</div>
           <a href="https://www.linkedin.com/in/jesse-van-loon-8b3a751a2/">Linkedin</a>
-          <div>/</div>
-          <a href="https://x.com/jesse_vanloon">Twitter</a>
+          <!-- <div>/</div>
+          <a href="https://x.com/jesse_vanloon">Twitter</a> -->
         </div>
       </div>
     </div>

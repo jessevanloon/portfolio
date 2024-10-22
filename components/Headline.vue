@@ -47,7 +47,7 @@ export default {
     <div class="container mx-auto">
       <div class="inner flex justify-between">
         <div class="email flex items-center gap-2	">
-          <div>Front-end by Jesse</div>
+          <div>Code By Jesse</div>
         </div>
         <div class="social-icons flex items-center gap-4">
           <div class="instagram flex items-center">
@@ -60,11 +60,11 @@ export default {
               <Icon name="bx:bxl-linkedin" />
             </a>
           </div>
-          <div class="twitter flex items-center">
+          <!-- <div class="twitter flex items-center">
             <a href="https://x.com/jesse_vanloon" target="_blank" rel="noopener noreferrer" class="flex items-center">
             <Icon name="bx:bxl-twitter" />
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

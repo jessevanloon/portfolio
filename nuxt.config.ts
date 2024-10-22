@@ -16,4 +16,5 @@ export default defineNuxtConfig({
   plugins: ['~/plugins/lottie.client'],
 
 
+
 })

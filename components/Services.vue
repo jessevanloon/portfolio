@@ -42,7 +42,7 @@ onMounted(() => {
     <div class="container mx-auto">
       <div class="services-content flex flex-col items-center justify-center gap-16">
         <div class="title-wrap">
-          <div class="title title-font">Collaborate with brands and agencies to create impactful results.</div>
+          <div class="title title-font">I collaborate with brands and companies to create impactful results.</div>
         </div>
         <div class="services flex">
           <div class="btn-wrap">
